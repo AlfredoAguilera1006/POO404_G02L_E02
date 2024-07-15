@@ -4,7 +4,6 @@ import java.util.Collection;
 public class EjemploCollection {
     public static void main(String[] args) {
         Collection listaMarcasCoches = new ArrayList<String>();
-        Collection
         listaMarcasCoches.add("Audi");
         listaMarcasCoches.add("Porsche");
         listaMarcasCoches.add("Aston Martin");

@@ -2,11 +2,12 @@ package EjerciciosComplementarios;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+
 public class Ejercicio4 {
     private Map<String, Alumno> alumnos;
     private Scanner scanner;
 
-    public GestorAlumnos() {
+    public Ejercicio4() { // Constructor
         this.alumnos = new HashMap<>();
         this.scanner = new Scanner(System.in);
     }
@@ -73,7 +74,7 @@ public class Ejercicio4 {
     }
 
     public static void main(String[] args) {
-        GestorAlumnos gestor = new GestorAlumnos();
+        Ejercicio4 gestor = new Ejercicio4(); // Instanciar la clase Ejercicio4
         gestor.run();
     }
 }
