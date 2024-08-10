@@ -16,15 +16,25 @@ public class Main {
 
         mostrarMensaje("Inserta tu Tarjeta", "Bienvenido", JOptionPane.INFORMATION_MESSAGE);
 
-        String cuentaStr = solicitarEntrada("Número de cuenta?", "Entrada");
-        if (cuentaStr == null) {
-            return;
-        }
+        String cuentaStr = null;
+        int cuenta = -1;
 
-        int cuenta = convertirACuenta(cuentaStr);
-        if (cuenta == -1 || !cuentas.containsKey(cuenta)) {
-            mostrarMensaje("Cuenta no encontrada o número de cuenta inválido.", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
+        while (cuenta == -1) {
+            cuentaStr = solicitarEntrada("Número de cuenta?", "Entrada");
+            if (cuentaStr == null) {
+                mostrarMensaje("Debes ingresar un número de cuenta.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+                continue;
+            }
+
+            try {
+                cuenta = Integer.parseInt(cuentaStr);
+                if (!cuentas.containsKey(cuenta)) {
+                    mostrarMensaje("Cuenta no encontrada.", "Error", JOptionPane.ERROR_MESSAGE);
+                    cuenta = -1; // Reset cuenta to continue the loop
+                }
+            } catch (NumberFormatException e) {
+                mostrarMensaje("Número de cuenta inválido.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         }
 
         while (true) {
@@ -49,7 +59,7 @@ public class Main {
                 case "5. Salir":
                     guardarCuentas();
                     mostrarContenidoArchivo("cuentas.txt");
-                    mostrarMensaje("Gracias por usar el cajero automático.");
+                    mostrarMensaje("Gracias por usar nuestro cajero automático, que tengas un feliz dia!.");
                     return;
                 default:
                     mostrarMensaje("Opción no válida.", "Error", JOptionPane.ERROR_MESSAGE);
