@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="sv.edu.udb.form.Persona">
+  <grid id="27dc6" binding="pnlPersona" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="7" y="20" width="653" height="586"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="c7992" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="sv/edu/udb/img/man.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="cfb3e" class="javax.swing.JLabel" binding="lblId">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Id:"/>
+        </properties>
+      </component>
+      <component id="153d4" class="javax.swing.JLabel" binding="lblNombre">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Ingrese su nombre:"/>
+        </properties>
+      </component>
+      <component id="31dbb" class="javax.swing.JLabel" binding="lblEdad">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Ingrese su edad:"/>
+        </properties>
+      </component>
+      <component id="b3dd7" class="javax.swing.JLabel" binding="lblTel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Ingrese su telefono:"/>
+        </properties>
+      </component>
+      <component id="61369" class="javax.swing.JLabel" binding="lblSexo">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Seleccione su sexo:"/>
+        </properties>
+      </component>
+      <component id="f169a" class="javax.swing.JButton" binding="btnObtenerDatos">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Guardar"/>
+        </properties>
+      </component>
+      <component id="acd90" class="javax.swing.JButton" binding="btnLimpiar">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Limpiar"/>
+        </properties>
+      </component>
+      <component id="a7f79" class="javax.swing.JTextField" binding="txtId">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+        </properties>
+      </component>
+      <component id="14f2a" class="javax.swing.JTextField" binding="txtEdad">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+        </properties>
+      </component>
+      <component id="95e80" class="javax.swing.JTextField" binding="txtTel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+        </properties>
+      </component>
+      <component id="32ac4" class="javax.swing.JComboBox" binding="CBoxSexo">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <model>
+            <item value="Masculino"/>
+            <item value="Femenino"/>
+          </model>
+        </properties>
+      </component>
+      <component id="1b12f" class="javax.swing.JTextField" binding="txtNombre">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+        </properties>
+      </component>
+      <component id="6bc39" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="20" style="1"/>
+          <text value="Datos de persona"/>
+        </properties>
+      </component>
+      <scrollpane id="b5d5c">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="3bdc4" class="javax.swing.JTable" binding="tblDatos">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="5032b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Seleccione su ocupacion"/>
+        </properties>
+      </component>
+      <component id="50968" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Ingrese su fecha de nacimiento"/>
+        </properties>
+      </component>
+      <component id="1883" class="javax.swing.JComboBox" binding="cmbOcupacion">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9895d" class="javax.swing.JTextField" binding="txtFechadeNacimiento">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="3244c" class="javax.swing.JButton" binding="eliminarButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Segoe Print" size="16" style="1"/>
+          <text value="Eliminar"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
