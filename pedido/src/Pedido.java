@@ -2,6 +2,9 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +25,8 @@ public class Pedido {
     private List<String> comments = new ArrayList<>();
 
     public Pedido() {
+
+
         // Inicializar el menú
         String[] columnNames = {"Plato"};
         String[][] data = {
@@ -31,7 +36,21 @@ public class Pedido {
                 {"Carne de cerdo asada "},
                 {"Pacaya rellena "}
         };
+
         menuTable.setModel(new DefaultTableModel(data, columnNames));
+
+        try {
+            // Establece la conexión (reemplaza con tus propios detalles de conexión)
+            String url = "jdbc:mysql://localhost:3306/poodesafio";
+            String user = "root";
+            String password = "";
+            Connection connection = DriverManager.getConnection(url, user, password);
+        } catch (SQLException e) {
+            e.printStackTrace(); // Manejo de errores
+        }
+
+
+
 
         // Añadir opciones de pago
         paymentComboBox.addItem("Tarjeta de Crédito");
