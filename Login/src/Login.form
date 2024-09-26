@@ -3,10 +3,10 @@
   <grid id="27dc6" binding="Login" layout-manager="GridLayoutManager" row-count="6" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="10" bottom="10" right="10"/>
     <constraints>
-      <xy x="20" y="20" width="440" height="400"/>
+      <xy x="20" y="20" width="634" height="400"/>
     </constraints>
     <properties>
-      <background color="-5317"/>
+      <background color="-7677441"/>
     </properties>
     <border type="none"/>
     <children>
@@ -26,7 +26,7 @@
         </constraints>
         <properties>
           <foreground color="-16777216"/>
-          <text value="The Temper Trap"/>
+          <text value="Login"/>
         </properties>
       </component>
       <component id="338f6" class="javax.swing.JLabel">
