@@ -30,11 +30,12 @@ public class Pedido {
         // Inicializar el menú
         String[] columnNames = {"Plato"};
         String[][] data = {
-                {"Pollo asado  "},
-                {"Carne asada "},
-                {"Chiles rellenos  "},
-                {"Carne de cerdo asada "},
-                {"Pacaya rellena "}
+                {"Pizza Margherita  "},
+                {"Hamburguesa Clásica "},
+                {"Ensalada César  "},
+                {"Sandwich de Pollo "},
+                {"Tacos de Carne"},
+
         };
 
         menuTable.setModel(new DefaultTableModel(data, columnNames));
