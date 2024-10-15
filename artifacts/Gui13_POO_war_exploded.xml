@@ -1,0 +1,45 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gui13_POO:war exploded">
+    <output-path>$PROJECT_DIR$/target/Gui13_POO-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Gui13_POO</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Gui13_POO" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.27" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
+          <element id="library" level="project" name="Maven: net.sf.jasperreports:jasperreports:6.19.1" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.4" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.2" />
+          <element id="library" level="project" name="Maven: commons-digester:commons-digester:2.1" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-collections4:4.2" />
+          <element id="library" level="project" name="Maven: com.lowagie:itext:2.1.7.js9" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.68" />
+          <element id="library" level="project" name="Maven: org.jfree:jcommon:1.0.23" />
+          <element id="library" level="project" name="Maven: org.jfree:jfreechart:1.0.19" />
+          <element id="library" level="project" name="Maven: org.eclipse.jdt:ecj:3.21.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.13.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.13.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.13.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.1" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:4.2.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:6.2.7" />
+          <element id="library" level="project" name="Maven: jakarta.servlet:jakarta.servlet-api:6.1.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/Gui13_POO-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Gui13_POO/web/Web" />
+    </root>
+  </artifact>
+</component>
